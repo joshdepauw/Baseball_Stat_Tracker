@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="practiceDatabaseModelStoreContainer" CdmEntityContainer="practiceDatabaseEntities">
+    <EntitySetMapping Name="Players">
+      <EntityTypeMapping TypeName="practiceDatabaseModel.Player">
+        <MappingFragment StoreEntitySet="Players">
+          <ScalarProperty Name="PlayerID" ColumnName="PlayerID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="Team" ColumnName="Team" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stats">
+      <EntityTypeMapping TypeName="practiceDatabaseModel.Stat">
+        <MappingFragment StoreEntitySet="Stats">
+          <ScalarProperty Name="StatID" ColumnName="StatID" />
+          <ScalarProperty Name="PlayerID" ColumnName="PlayerID" />
+          <ScalarProperty Name="AtBats" ColumnName="AtBats" />
+          <ScalarProperty Name="Hits" ColumnName="Hits" />
+          <ScalarProperty Name="StrikeOuts" ColumnName="StrikeOuts" />
+          <ScalarProperty Name="Walks" ColumnName="Walks" />
+          <ScalarProperty Name="Singles" ColumnName="Singles" />
+          <ScalarProperty Name="Doubles" ColumnName="Doubles" />
+          <ScalarProperty Name="Triples" ColumnName="Triples" />
+          <ScalarProperty Name="Homeruns" ColumnName="Homeruns" />
+          <ScalarProperty Name="RBI" ColumnName="RBI" />
+          <ScalarProperty Name="Runs" ColumnName="Runs" />
+          <ScalarProperty Name="Average" ColumnName="Average" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
